@@ -1,0 +1,736 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "font-logo";
+    src: url('font/CONFN.TTF');
+}
+
+@font-face {
+    font-family: "nyala";
+    src: url('font/nyala.ttf');
+}
+
+@font-face {
+    font-family: "sunday";
+    src: url(font/sunday.otf)
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.header {
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    background: #e7e9ea;
+    z-index: 4;
+}
+
+h3.logo {
+    line-height: 44px;
+    margin-left: 10px;
+}
+
+.logo2 {
+    line-height: 44px;
+    margin-left: 5px;
+    font-size: 23pt;
+    font-family: nyala;
+}
+
+.logo-fav {
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 220px;
+    background: #f8f9fa;
+    height: 100%;
+    z-index: 3;
+    padding-top: 44px;
+    left: 0;
+    top: 0;
+}
+
+.konten_dalem {
+    width: 95%;
+}
+
+.aktif {
+    background: #e9eaeb;
+}
+
+span {
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(221, 219, 219);
+}
+
+.sidebar ul li:hover {
+    background: #edeff1;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar ul li i {
+    color: #333;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding-top: 50px;
+}
+
+.cari {
+    height: 35px;
+}
+
+.log {
+    font-size: 16pt;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.logout {
+    font-family: nyala;
+    font-size: 17pt;
+    line-height: 44px;
+    margin-right: 5px;
+}
+
+div.konten {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+th {
+    background: #529fc1;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    line-height: 35px;
+    text-align: center;
+}
+
+.btn {
+    padding: 4px 10px;
+    margin: 2px 0;
+}
+
+.btn2 {
+    margin-bottom: 15px;
+    margin-top: -1px;
+}
+
+.export {
+    margin: 0 5px;
+}
+
+.pdf {
+    margin-left: 10px;
+}
+
+.page {
+    margin-top: -5px;
+}
+
+.side:hover {
+    text-decoration: none;
+}
+
+.container {
+    margin-bottom: 30px;
+    border: 1px solid rgb(238, 236, 236);
+    max-width: 100%;
+}
+
+.headline {
+    height: 35px;
+    background: #f8f9fa;
+    border: 1px solid rgb(238, 236, 236);
+}
+
+.headline h5 {
+    font-size: 13pt;
+    line-height: 35px;
+    margin-left: 15px;
+    color: #4b4f58;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.admin {
+    font-size: 19pt;
+    font-weight: bold;
+    font-family: nyala;
+    margin-right: 40px;
+    color: #4b4f58;
+    margin-bottom: 28px;
+    margin-left: 84px;
+}
+
+.online {
+    font-size: 12pt;
+    margin-right: 42px;
+}
+
+.online2 {
+    margin-right: 53px;
+}
+
+.on {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(7, 184, 7);
+    margin-top: -16px;
+}
+
+.ontext {
+    margin-top: -22px;
+    margin-left: 5px;
+}
+
+.profile {
+    transition: 1.2s;
+}
+
+.profile:hover {
+    transform: rotateY(180deg);
+}
+
+.search {
+    color: #4b4f58;
+}
+
+.form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+.linkAktif:hover {
+    text-decoration: none;
+}
+
+.popup {
+    display: none;
+    display: flex;
+}
+
+.laporan tr,
+.laporan td {
+    padding: 5px;
+    font-size: 14pt;
+}
+
+.laporan {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    height: 40px;
+}
+
+.tabel-data tr,
+.tabel-data td {
+    padding: 0 5px;
+}
+
+.tabel-data label {
+    font-size: 15pt;
+}
+
+.cari-filter {
+    padding-bottom: 15px;
+    padding-top: 2px;
+}
+
+/* Tablet - Medium screens */
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        width: 180px;
+    }
+    
+    .main-content {
+        margin-left: 180px;
+    }
+    
+    .admin {
+        font-size: 16pt;
+        margin-left: 40px;
+    }
+}
+
+/* Large Mobile - Small tablets */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .sidebar ul li span:nth-child(2) {
+        display: none;
+    }
+
+    .sidebar ul li {
+        text-align: center;
+        padding: 12px 5px;
+    }
+
+    .sidebar ul li i {
+        font-size: 20px;
+    }
+
+    .main-content {
+        margin-left: 70px;
+    }
+
+    .admin,
+    .online {
+        display: none;
+    }
+
+    div.konten {
+        margin-left: 20px;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar ul li {
+        padding: 10px 5px;
+    }
+
+    .sidebar ul li i {
+        font-size: 18px;
+    }
+
+    .main-content {
+        margin-left: 60px;
+    }
+
+    div.konten {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    td i {
+        font-size: 14px;
+    }
+
+    .profile {
+        position: relative;
+        left: 20%;
+    }
+
+    h2.head {
+        font-size: 6vw;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 380px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .main-content {
+        margin-left: 50px;
+    }
+
+    .sidebar ul li {
+        padding: 8px 3px;
+    }
+
+    .sidebar ul li i {
+        font-size: 16px;
+    }
+
+    .table-sm td,
+    .table-sm th {
+        padding: .2rem;
+        font-size: 10px;
+    }
+
+    .profile {
+        left: 15%;
+    }
+
+    .export,
+    .btn2 {
+        font-size: 3.5vw;
+    }
+
+    .btn2 {
+        margin-top: 10px;
+    }
+}
+
+.ikon {
+    font-size: 50pt;
+    color: #e9eaeb;
+}
+
+.ket {
+    color: #e9eaeb;
+}
+
+.head {
+    font-size: 14pt;
+}
+
+.total {
+    font-size: 17pt;
+}
+
+.tulisan {
+    margin-left: -20px;
+}
+
+.keluar {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid #dedbdb;
+}
+
+.judul {
+    margin-bottom: -15px;
+}
+
+.judul-chart {
+    color: #4b4f58;
+}
+
+.bagi {
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.chart {
+    margin: 20px 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #65c763;
+    overflow: hidden;
+    width: 92%;
+    height: 0;
+    transition: .4s ease;
+}
+
+.jarak:hover .overlay {
+    height: 100%;
+}
+
+.tambah {
+    font-size: 60pt;
+    color: #e9eaeb;
+}
+
+.tulisan {
+    font-size: 21pt;
+    color: #e9eaeb;
+    margin-bottom: -1px;
+}
+
+.ikon2 {
+    font-size: 60pt;
+    color: #e9eaeb;
+}
+
+.rekening {
+    width: 96.5%;
+    height: 45vh;
+    margin: auto;
+    margin-top: 30px;
+    background: rgba(251, 251, 251, 0.301);
+    border: .1px solid rgb(235, 234, 234);
+}
+
+.konten-rekening {
+    padding: 10px;
+    margin: 15px;
+}
+
+.konten-rekening {
+    font-family: inherit;
+    font-size: 14pt;
+    height: 37vh;
+}
+
+.konten-rekening p {
+    font-family: nyala;
+    font-size: 20pt;
+    color: #3b3b3b;
+}
+
+.konten-rekening h3 {
+    font-family: cursive;
+    color: #3b3b3b;
+    margin-top: -10px;
+}
+
+.add-rekening {
+    width: 97%;
+    padding: 10px;
+    text-align: left;
+    font-family: cursive;
+    font-size: 11pt;
+    height: 45px;
+}
+
+.btn-prev {
+    background: #3498db;
+    color: white;
+    margin: 10px 0;
+}
+
+.btn-prev:hover {
+    background: #2980b9;
+}
+
+.btn-next {
+    background: #1abc9c;
+    color: white;
+}
+
+.btn-next:hover {
+    background: #16a085;
+}
+
+.icon-plus {
+    font-size: 11pt;
+}
+
+.history span,
+.refresh span {
+    font-size: 12pt;
+    color: #575757;
+}
+
+.history i,
+.refresh i {
+    font-size: 11pt;
+    color: #575757;
+}
+
+.history a,
+.refresh a {
+    text-decoration: none;
+}
+
+.history a:hover,
+.refresh a:hover {
+    font-weight: bold;
+}
+
+/* Additional responsive adjustments for content elements */
+@media screen and (max-width: 768px) {
+    .jarak {
+        margin: 5px;
+    }
+
+    .ikon {
+        font-size: 45pt;
+    }
+
+    .head {
+        font-size: 12pt;
+    }
+
+    .total {
+        font-size: 14pt;
+    }
+
+    .rekening {
+        width: 98%;
+        height: 40vh;
+    }
+
+    .konten-rekening {
+        padding: 8px;
+        margin: 10px;
+        font-size: 12pt;
+        height: 32vh;
+    }
+
+    .konten-rekening p {
+        font-size: 18pt;
+    }
+
+    .bagi {
+        padding: 15px;
+    }
+
+    .tulisan {
+        font-size: 18pt;
+        margin-left: -10px;
+    }
+
+    .tambah {
+        font-size: 50pt;
+    }
+
+    .ikon2 {
+        font-size: 50pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ikon {
+        font-size: 35pt;
+    }
+
+    .head {
+        font-size: 10pt;
+    }
+
+    .total {
+        font-size: 12pt;
+    }
+
+    .rekening {
+        width: 100%;
+        height: 35vh;
+        margin-top: 15px;
+    }
+
+    .konten-rekening {
+        padding: 5px;
+        margin: 8px;
+        font-size: 11pt;
+        height: 28vh;
+    }
+
+    .konten-rekening p {
+        font-size: 16pt;
+    }
+
+    .konten-rekening h3 {
+        font-size: 12pt;
+    }
+
+    .bagi {
+        padding: 10px;
+    }
+
+    .tulisan {
+        font-size: 16pt;
+        margin-left: -5px;
+    }
+
+    .tambah {
+        font-size: 40pt;
+    }
+
+    .ikon2 {
+        font-size: 40pt;
+    }
+
+    .add-rekening {
+        width: 100%;
+        font-size: 10pt;
+        height: 40px;
+    }
+
+    .chart {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .ikon {
+        font-size: 30pt;
+    }
+
+    .head {
+        font-size: 9pt;
+    }
+
+    .total {
+        font-size: 11pt;
+    }
+
+    .tulisan {
+        font-size: 14pt;
+        margin-left: 0;
+    }
+
+    .tambah {
+        font-size: 35pt;
+    }
+
+    .ikon2 {
+        font-size: 35pt;
+    }
+
+    .konten-rekening p {
+        font-size: 14pt;
+    }
+
+    .konten-rekening h3 {
+        font-size: 11pt;
+    }
+
+    .history span,
+    .refresh span {
+        font-size: 10pt;
+    }
+
+    .history i,
+    .refresh i {
+        font-size: 9pt;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .main-content {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 300px;
+    }
+}
