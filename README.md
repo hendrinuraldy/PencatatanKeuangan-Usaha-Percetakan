@@ -1,22 +1,6 @@
 # Pencatatan Keuangan Harian
 Aplikasi pencatatan keuangan harian ini memiliki tampilan yang sederhana dan fitur yang mampu berfungsi dengan baik.
 
-To access. Example http://sibeux.my.id/web-keuangan-app/catatankas
+terdapat chatbot AI dan prediksi arus kas dengan AI
 
-## Tampilan Aplikasi
-![ss](img/ss1.png)
-![ss](img/ss2.png)
-![ss](img/ss3.png)
-![ss](img/ss4.png)
-![ss](img/ss5.png)
-
-## Admin Account
-|  Username | Password |
-|:---------:|---------:|
-|  admin    |  admin   |
-|  andi     |  andi    |
-
-## Sistem Requirement
-- Database MySQL
-- XAMPP / PHP 5.6
-- Server : XAMPP
+![image](https://github.com/user-attachments/assets/74f24d56-9389-4f3e-a643-144fd8e2c23f)
